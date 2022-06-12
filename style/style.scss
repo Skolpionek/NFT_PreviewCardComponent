@@ -32,10 +32,29 @@ body{
       border-radius: 10px;
       box-shadow: 10px 10px 20px 10px rgb(20, 20, 20);
       .image{
-         width: 300px;
+         height: 300px;
+         img{
+            width: 300px;
+            border-radius: 10px;
+         }  
+         position: relative;
+         cursor: pointer;
+         &:hover::after{
+            border-radius: 10px;
+            position: absolute;
+            content: "";
+            background-color: hsla(178, 100%, 50%, 0.601);
+            inset: 0;
+            background-image: url(../images/icon-view.svg);
+            background-repeat: no-repeat;
+            background-position: center;
+         }
       }
       h2{
-         
+         &:hover{
+            color: $Cyan;
+         }
+         cursor: pointer;
          color: $White;
          font-weight: $W2;
          margin: 10px 0;
@@ -76,10 +95,15 @@ body{
             width: 30px;
             border: 1px solid $White;
             border-radius: 50%;
+
          }
          span{
             color: $SoftBlue;
             span{
+               &:hover{
+                  color: $Cyan;
+               }
+               cursor: pointer;
                color: $White;
             }
          }

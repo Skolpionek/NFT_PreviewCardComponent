@@ -86,12 +86,32 @@ body #container {
   box-shadow: 10px 10px 20px 10px rgb(20, 20, 20);
 }
 body #container .image {
+  height: 300px;
+  position: relative;
+  cursor: pointer;
+}
+body #container .image img {
   width: 300px;
+  border-radius: 10px;
+}
+body #container .image:hover::after {
+  border-radius: 10px;
+  position: absolute;
+  content: "";
+  background-color: hsla(178deg, 100%, 50%, 0.601);
+  inset: 0;
+  background-image: url(../images/icon-view.svg);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 body #container h2 {
+  cursor: pointer;
   color: hsl(0deg, 0%, 100%);
   font-weight: 400;
   margin: 10px 0;
+}
+body #container h2:hover {
+  color: hsl(178deg, 100%, 50%);
 }
 body #container .txt {
   margin: 20px 0;
@@ -135,7 +155,11 @@ body #container .user span {
   color: hsl(215deg, 51%, 70%);
 }
 body #container .user span span {
+  cursor: pointer;
   color: hsl(0deg, 0%, 100%);
+}
+body #container .user span span:hover {
+  color: hsl(178deg, 100%, 50%);
 }
 body .attribution {
   color: hsl(0deg, 0%, 100%);
