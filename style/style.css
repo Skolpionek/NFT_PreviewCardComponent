@@ -1,4 +1,5 @@
 /* Box sizing rules */
+@import url("https://fonts.googleapis.com/css2?family=Changa:wght@500&display=swap");
 *,
 *::before,
 *::after {
@@ -67,4 +68,82 @@ select {
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(217deg, 54%, 11%);
+  font-family: Arial, Helvetica, sans-serif;
+}
+body #container {
+  background-color: hsl(216deg, 50%, 16%);
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 10px 10px 20px 10px rgb(20, 20, 20);
+}
+body #container .image {
+  width: 300px;
+}
+body #container h2 {
+  color: hsl(0deg, 0%, 100%);
+  font-weight: 400;
+  margin: 10px 0;
+}
+body #container .txt {
+  margin: 20px 0;
+  font-size: 18px;
+  color: hsl(215deg, 51%, 70%);
+  font-weight: 300;
+}
+body #container .info {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding-bottom: 20px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid hsl(215deg, 51%, 70%);
+}
+body #container .info .currency {
+  color: hsl(178deg, 100%, 50%);
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+body #container .info .time {
+  color: hsl(215deg, 51%, 70%);
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+body #container .user {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+body #container .user img {
+  width: 30px;
+  border: 1px solid hsl(0deg, 0%, 100%);
+  border-radius: 50%;
+}
+body #container .user span {
+  color: hsl(215deg, 51%, 70%);
+}
+body #container .user span span {
+  color: hsl(0deg, 0%, 100%);
+}
+body .attribution {
+  color: hsl(0deg, 0%, 100%);
+  font-size: 11px;
+  position: absolute;
+  bottom: 10px;
+  text-align: center;
+}
+body .attribution a {
+  color: hsl(228deg, 45%, 44%);
 }/*# sourceMappingURL=style.css.map */

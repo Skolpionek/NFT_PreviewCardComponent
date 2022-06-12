@@ -1,1 +1,98 @@
-@import './reset'
+@import './reset';
+@import url('https://fonts.googleapis.com/css2?family=Changa:wght@500&display=swap');
+//Colors
+   //Primary
+      $SoftBlue: hsl(215, 51%, 70%);
+      $Cyan: hsl(178, 100%, 50%);
+   //Neutral
+      $VeryDarkBlueMain: hsl(217, 54%, 11%);
+      $VeryDarkBlueCard: hsl(216, 50%, 16%);
+      $VeryDarkBlueLine: hsl(215, 32%, 27%);
+      $White: hsl(0, 0%, 100%);
+//Fonts
+   //Weight
+      $W1:300;
+      $W2:400;
+      $W3:600;
+   //Size
+      $ParagraphSize:18px;
+   //Family
+      $font:  Arial, Helvetica, sans-serif;
+
+body{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background-color: $VeryDarkBlueMain;
+   font-family: $font;
+   #container{
+      background-color: $VeryDarkBlueCard;
+      width: min-content;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 10px 10px 20px 10px rgb(20, 20, 20);
+      .image{
+         width: 300px;
+      }
+      h2{
+         
+         color: $White;
+         font-weight: $W2;
+         margin: 10px 0;
+      }
+      .txt{
+         margin: 20px 0;
+         font-size: $ParagraphSize;
+         color: $SoftBlue;
+         font-weight: $W1;
+      }
+      .info{
+         display: flex;
+         width: 100%;
+         justify-content: space-between;
+         padding-bottom: 20px;
+         margin-bottom: 15px;
+         border-bottom: 1px solid $SoftBlue;
+         .currency{
+            color: $Cyan;
+            font-weight: $W3;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+         }
+         .time{
+            color: $SoftBlue;
+            font-weight: $W3;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+         }
+      }
+      .user{
+         display: flex;
+         align-items: center;
+         gap: 10px;
+         img{
+            width: 30px;
+            border: 1px solid $White;
+            border-radius: 50%;
+         }
+         span{
+            color: $SoftBlue;
+            span{
+               color: $White;
+            }
+         }
+      }
+   }
+
+   .attribution { 
+      color: $White;
+      font-size: 11px;
+      position: absolute;
+      bottom: 10px;
+      text-align: center;
+      a { color: hsl(228, 45%, 44%); } 
+   }
+   
+}
